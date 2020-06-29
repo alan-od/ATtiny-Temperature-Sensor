@@ -40,7 +40,7 @@ but not receive an ack from the receiver.  The power management system would the
 closing down and restarting the SPI hardware and then the NRF24 would be accessed again.
 This problem didn't appear to occur when the prototype was originally tested but then there was
 no power management system. The solution was quite simple, I just added a reset in the txPayload() 
-after readWrite(R,W_TX_PAYLOAD,writeBuf,5). While I was at it I tightened up the timing withing 
+after readWrite(R,W_TX_PAYLOAD,writeBuf,5). While I was at it I tightened up the timing within 
 the code as there were too many delays() and I also reduced the value of the DELAY macro to 5mS.
 
 One "Gotcha" that I came across concerns measuring voltage with the ADC.
