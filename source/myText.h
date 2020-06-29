@@ -1,5 +1,5 @@
 /*
-some stuff
+Some development notes
 
 */
 
